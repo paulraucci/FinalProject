@@ -1,6 +1,8 @@
 # FinalProject
 
-## MVP
+## MVP/Features
+
+## Post MVP / To Be Added
 
 ## Technology
 
