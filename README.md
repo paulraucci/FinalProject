@@ -14,5 +14,8 @@
 * I will TRY REACT at first
 
 ## Wireframe
+![alt text](https://github.com/paulraucci/FinalProject/blob/master/Wireframe.png "Wireframe")
 
 ## ERD-Entity Relational Diagram
+
+![alt text](https://github.com/paulraucci/FinalProject/blob/master/ERD.png "ERD")
