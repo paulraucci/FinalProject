@@ -1,13 +1,72 @@
 import React, { Component } from "react";
-// import axios from "axios";
 
+import Restaurants from "./Resaurants";
+import Axios from "axios";
+// swtich case - looks at this.state.view
+// view == "something" render something
+// on click of something we want to change view
 class Cities extends Component {
   constructor(props) {
     super(props);
     this.state = {
       cities: [],
-      city: {}
+      showComponent: false,
+      chosenCityRestaurants: [],
+      view: "showButtons"
     };
+    this._onButtonClick = this._onButtonClick.bind(this);
+  }
+  getView() {
+    switch (this.state.view) {
+      case "showButtons":
+        return this.state.cities.map(city => {
+          //   console.log(city.id, "something");
+          return (
+            <div>
+              <button
+                className="cities"
+                onClick={this._onButtonClick}
+                key={city.id}
+                data-cityid={city.id}
+              >
+                {city.city}
+              </button>
+            </div>
+          );
+        });
+      case "showRestaurants":
+        return (
+          <Restaurants allRestaurants={this.state.chosenCityRestaurants} />
+        );
+      default:
+        return this.state.cities.map(city => {
+          //   console.log(city.id, "something");
+          return (
+            <div>
+              <button
+                className="cities"
+                onClick={this._onButtonClick}
+                key={city.id}
+                data-cityid={city.id}
+              >
+                {city.city}
+              </button>
+            </div>
+          );
+        });
+    }
+  }
+  async restaurantFetch(e) {
+    const cityId = e.target.dataset.cityid;
+    const res = await Axios.get(`http://localhost:3000/cities/${cityId}`);
+    this.setState({
+      chosenCityRestaurants: res.data.eateries,
+      showComponent: true,
+      view: "showRestaurants"
+    });
+  }
+  _onButtonClick(e) {
+    this.restaurantFetch(e);
   }
   componentDidMount() {
     this.getCities();
@@ -18,21 +77,11 @@ class Cities extends Component {
       .then(json => this.setState({ cities: json }))
       .catch(error => console.error(error));
   }
+
   render() {
     return (
       <div>
-        <main>
-          {this.state.cities.map(city => {
-            return (
-              <div>
-                <button className="cities" key={city._id}>
-                  {city.city}
-                </button>
-                {/* <h2>{city.location}</h2> */}
-              </div>
-            );
-          })} 
-        </main>
+        <main>{this.getView()}</main>
       </div>
     );
   }

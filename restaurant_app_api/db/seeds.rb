@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-10.times do
-    City.create(
-        city: Faker::Address.unique.city,
-    )
-end
+# 10.times do
+#     City.create(
+#         city: Faker::Address.unique.city,
+#     )
+# end
 
 seedData = [
     {
