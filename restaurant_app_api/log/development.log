@@ -4153,3 +4153,543 @@ Processing by CitiesController#index as */*
 Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms | Allocations: 1960)
 
 
+Started GET "/cities" for ::1 at 2019-12-13 10:30:48 -0500
+  [1m[35m (27.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (23.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 94ms (Views: 22.9ms | ActiveRecord: 68.0ms | Allocations: 5753)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 10:31:23 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.5ms | Allocations: 1960)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 10:31:27 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 1960)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 10:31:58 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 1960)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 10:32:14 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 1945)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 10:32:24 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms | Allocations: 1942)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 10:37:15 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1960)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 10:37:57 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 1942)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 10:38:09 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1942)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRestaurants (20191213160041)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (40.2ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" bigserial primary key, "name" character varying, "location" character varying, "rating" character varying, "cuisine" character varying)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213160041"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRestaurants (20191213160041)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mDROP TABLE "restaurants"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20191213160041"]]
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRestaurants (20191213160041)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" bigserial primary key, "name" character varying, "location" character varying, "rating" character varying, "cuisine" character varying)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213160041"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEatery (20191213163220)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "eateries" ("id" bigserial primary key, "name" character varying, "location" character varying, "rating" character varying, "cuisine" character varying)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213163220"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (2.4ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"slow-carb\", \"heirloom\"]"], ["location", "9742 Sherell Avenue"], ["rating", "6.26"], ["cuisine", "Vietnamese"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.3ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"helvetica\", \"taxidermy\"]"], ["location", "14774 Aline Summit"], ["rating", "3.92"], ["cuisine", "Argentinian"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.3ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"pug\", \"hashtag\"]"], ["location", "370 Sauer Isle"], ["rating", "5.14"], ["cuisine", "Japanese"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"bespoke\", \"master\"]"], ["location", "9510 Bennie Ports"], ["rating", "1.96"], ["cuisine", "German"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"readymade\", \"street\"]"], ["location", "52477 Cristina Heights"], ["rating", "9.81"], ["cuisine", "Italian"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"mustache\", \"PBR&B\"]"], ["location", "8033 Brown Dam"], ["rating", "8.54"], ["cuisine", "Tex Mex"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.3ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"park\", \"mixtape\"]"], ["location", "1011 Rossana Station"], ["rating", "5.13"], ["cuisine", "Brazilian"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"master\", \"pinterest\"]"], ["location", "20643 Frances Wells"], ["rating", "7.98"], ["cuisine", "Thai"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"ramps\", \"ethical\"]"], ["location", "21263 Dickinson Summit"], ["rating", "3.17"], ["cuisine", "Korean"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"mlkshk\", \"polaroid\"]"], ["location", "66008 Santos Wall"], ["rating", "0.23"], ["cuisine", "Ramen"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"lo-fi\", \"wayfarers\"]"], ["location", "89173 Aracely Curve"], ["rating", "2.48"], ["cuisine", "Healthy"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"dreamcatcher\", \"normcore\"]"], ["location", "3320 Anja Summit"], ["rating", "2.06"], ["cuisine", "Ramen"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"hoodie\", \"etsy\"]"], ["location", "1238 Britt Port"], ["rating", "2.77"], ["cuisine", "Burgers"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"tattooed\", \"venmo\"]"], ["location", "7928 Wilma Station"], ["rating", "1.85"], ["cuisine", "American (New)"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"butcher\", \"phlogiston\"]"], ["location", "84350 Littel View"], ["rating", "7.87"], ["cuisine", "Sandwiches"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"squid\", \"tattooed\"]"], ["location", "2218 Moshe Track"], ["rating", "2.74"], ["cuisine", "Chinese"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"carry\", \"irony\"]"], ["location", "28170 Keeling Highway"], ["rating", "1.16"], ["cuisine", "Indian"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"lo-fi\", \"franzen\"]"], ["location", "741 Stoltenberg Spurs"], ["rating", "4.56"], ["cuisine", "African"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"freegan\", \"microdosing\"]"], ["location", "1639 Ashli Villages"], ["rating", "1.34"], ["cuisine", "Vegetarian"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"blog\", \"flannel\"]"], ["location", "68994 Torp Inlet"], ["rating", "0.93"], ["cuisine", "Mexican"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"XOXO\", \"roof\"]"], ["location", "9197 Deadra Road"], ["rating", "0.32"], ["cuisine", "Italian"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"umami\", \"intelligentsia\"]"], ["location", "7644 Delila Bridge"], ["rating", "7.78"], ["cuisine", "Tex Mex"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"chia\", \"sriracha\"]"], ["location", "86283 Jacobs Point"], ["rating", "1.09"], ["cuisine", "Juice & Smoothies"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"leggings\", \"tousled\"]"], ["location", "9881 Jacobi Village"], ["rating", "0.94"], ["cuisine", "Japanese"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEatery Create (0.1ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[\"wolf\", \"Thundercats\"]"], ["location", "6341 Yundt Divide"], ["rating", "2.49"], ["cuisine", "Vietnamese"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEatery Load (0.5ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mEatery Load (0.4ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries"[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (75.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "restaurant_app_api_development"[0m
+  [1m[35m (46.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "restaurant_app_api_test"[0m
+  [1m[35m (162.2ms)[0m  [1m[35mCREATE DATABASE "restaurant_app_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (69.7ms)[0m  [1m[35mCREATE DATABASE "restaurant_app_api_test" ENCODING = 'unicode'[0m
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCities (20191212164720)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "cities" ("id" bigserial primary key, "location" character varying, "city" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191212164720"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEatery (20191213163220)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "eateries" ("id" bigserial primary key, "name" character varying, "location" character varying, "rating" character varying, "cuisine" character varying)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213163220"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIdToEatery (20191213170808)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.8ms)[0m  [1m[35mALTER TABLE "eateris" ADD "id" number[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIdToEatery (20191213170808)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.7ms)[0m  [1m[35mALTER TABLE "eateries" ADD "id" number[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIdToEatery (20191213170808)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mALTER TABLE "eateries" ADD "id" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIdToEatery (20191213170808)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.3ms)[0m  [1m[35mALTER TABLE "eateries" ADD "cityId" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213170808"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-13 17:14:14.639676"], ["updated_at", "2019-12-13 17:14:14.639676"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (4.4ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "South Brettchester"], ["created_at", "2019-12-13 17:22:14.096656"], ["updated_at", "2019-12-13 17:22:14.096656"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Langport"], ["created_at", "2019-12-13 17:22:14.112977"], ["updated_at", "2019-12-13 17:22:14.112977"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Weissnatland"], ["created_at", "2019-12-13 17:22:14.116287"], ["updated_at", "2019-12-13 17:22:14.116287"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Jarrodton"], ["created_at", "2019-12-13 17:22:14.119292"], ["updated_at", "2019-12-13 17:22:14.119292"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Shirleyton"], ["created_at", "2019-12-13 17:22:14.122578"], ["updated_at", "2019-12-13 17:22:14.122578"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Russburgh"], ["created_at", "2019-12-13 17:22:14.126159"], ["updated_at", "2019-12-13 17:22:14.126159"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Audrietown"], ["created_at", "2019-12-13 17:22:14.129019"], ["updated_at", "2019-12-13 17:22:14.129019"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "East Michel"], ["created_at", "2019-12-13 17:22:14.132358"], ["updated_at", "2019-12-13 17:22:14.132358"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Dellton"], ["created_at", "2019-12-13 17:22:14.135902"], ["updated_at", "2019-12-13 17:22:14.135902"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Greggstad"], ["created_at", "2019-12-13 17:22:14.138899"], ["updated_at", "2019-12-13 17:22:14.138899"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEatery Load (1.1ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries"[0m
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries"[0m
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEatery Load (0.4ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEatery Load (0.6ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RenameColumnForEateries (20191213173312)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.7ms)[0m  [1m[35mALTER TABLE "eateries" RENAME COLUMN "cityId" TO "city_id"[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213173312"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mEatery Load (0.4ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (70.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "restaurant_app_api_development"[0m
+  [1m[35m (41.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "restaurant_app_api_test"[0m
+  [1m[35m (239.8ms)[0m  [1m[35mCREATE DATABASE "restaurant_app_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (88.5ms)[0m  [1m[35mCREATE DATABASE "restaurant_app_api_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4048746214733818815)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCities (20191212164720)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "cities" ("id" bigserial primary key, "location" character varying, "city" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191212164720"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEatery (20191213163220)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "eateries" ("id" bigserial primary key, "name" character varying, "location" character varying, "rating" character varying, "cuisine" character varying)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213163220"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIdToEatery (20191213170808)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "eateries" ADD "cityId" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213170808"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RenameColumnForEateries (20191213173312)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "eateries" RENAME COLUMN "cityId" TO "city_id"[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191213173312"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-13 17:38:51.387855"], ["updated_at", "2019-12-13 17:38:51.387855"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4048746214733818815)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (1.7ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "West Stuartton"], ["created_at", "2019-12-13 17:39:18.573325"], ["updated_at", "2019-12-13 17:39:18.573325"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Michalburgh"], ["created_at", "2019-12-13 17:39:18.578634"], ["updated_at", "2019-12-13 17:39:18.578634"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "North Jeff"], ["created_at", "2019-12-13 17:39:18.581642"], ["updated_at", "2019-12-13 17:39:18.581642"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Townebury"], ["created_at", "2019-12-13 17:39:18.584561"], ["updated_at", "2019-12-13 17:39:18.584561"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Tromphaven"], ["created_at", "2019-12-13 17:39:18.587519"], ["updated_at", "2019-12-13 17:39:18.587519"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Isidrofurt"], ["created_at", "2019-12-13 17:39:18.590547"], ["updated_at", "2019-12-13 17:39:18.590547"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Jeramymouth"], ["created_at", "2019-12-13 17:39:18.593430"], ["updated_at", "2019-12-13 17:39:18.593430"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Beckerburgh"], ["created_at", "2019-12-13 17:39:18.596378"], ["updated_at", "2019-12-13 17:39:18.596378"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "Lesleyside"], ["created_at", "2019-12-13 17:39:18.599314"], ["updated_at", "2019-12-13 17:39:18.599314"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("city", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["city", "New Don"], ["created_at", "2019-12-13 17:39:18.602227"], ["updated_at", "2019-12-13 17:39:18.602227"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.4ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"dreamcatcher\", \"kitsch\"]"], ["location", "947 Kuphal Lodge"], ["rating", "4.59"], ["cuisine", "Pizza"], ["city_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.3ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"XOXO\", \"DIY\"]"], ["location", "15105 Hagenes Parkways"], ["rating", "1.07"], ["cuisine", "American (Traditional)"], ["city_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"roof\", \"echo\"]"], ["location", "5524 Abshire Forest"], ["rating", "5.35"], ["cuisine", "French"], ["city_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"shoreditch\", \"hoodie\"]"], ["location", "18682 Steuber Fords"], ["rating", "2.01"], ["cuisine", "Vegetarian"], ["city_id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"authentic\", \"polaroid\"]"], ["location", "61288 Danita Alley"], ["rating", "6.98"], ["cuisine", "Ethiopean"], ["city_id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"normcore\", \"asymmetrical\"]"], ["location", "9854 Leffler Manor"], ["rating", "4.19"], ["cuisine", "Healthy"], ["city_id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"bushwick\", \"kogi\"]"], ["location", "405 Terry Stravenue"], ["rating", "8.87"], ["cuisine", "Ramen"], ["city_id", 7]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"locavore\", \"cardigan\"]"], ["location", "625 Demarcus Lane"], ["rating", "4.07"], ["cuisine", "Burgers"], ["city_id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.3ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"intelligentsia\", \"scenester\"]"], ["location", "79636 Mitchell Green"], ["rating", "2.36"], ["cuisine", "American (Traditional)"], ["city_id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mEatery Create (0.2ms)[0m  [1m[32mINSERT INTO "eateries" ("name", "location", "rating", "cuisine", "city_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"narwhal\", \"stumptown\"]"], ["location", "1036 Blanda Drives"], ["rating", "6.22"], ["cuisine", "Juice & Smoothies"], ["city_id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries"[0m
+Started GET "/cities" for ::1 at 2019-12-13 12:50:04 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 1]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 2]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 3]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 4]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 5]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.4ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 6]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.4ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 7]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 8]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 9]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 10]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 124ms (Views: 0.1ms | ActiveRecord: 10.3ms | Allocations: 23485)
+
+
+Started GET "/eateries" for ::1 at 2019-12-13 12:50:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/eateries"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/cities" for ::1 at 2019-12-13 12:50:44 -0500
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 1]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 2]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 3]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 4]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.1ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 5]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.1ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 6]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.1ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 7]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 8]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 9]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 10]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 2.1ms | Allocations: 10757)
+
+
+Started GET "/cities" for ::1 at 2019-12-13 12:51:31 -0500
+Processing by CitiesController#index as */*
+  [1m[36mCity Load (3.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 1]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 2]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 3]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.3ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 4]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.5ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 5]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Started GET "/logo192.png" for 127.0.0.1 at 2019-12-13 12:51:31 -0500
+  [1m[36mEatery Load (0.6ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 6]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.5ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 7]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 8]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 9]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+  [1m[36mEatery Load (0.2ms)[0m  [1m[34mSELECT "eateries".* FROM "eateries" WHERE "eateries"."city_id" = $1[0m  [["city_id", 10]]
+  ↳ app/controllers/cities_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 0.1ms | ActiveRecord: 6.6ms | Allocations: 11380)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/logo192.png"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

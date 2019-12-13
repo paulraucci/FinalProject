@@ -22,16 +22,16 @@ class Cities extends Component {
     return (
       <div>
         <main>
-          <h1>
-            {this.state.cities.map(city => {
-              return (
-                <div>
-                  <h1>{city.city}</h1>
-                  {/* <h2>{city.location}</h2> */}
-                </div>
-              );
-            })}
-          </h1>
+          {this.state.cities.map(city => {
+            return (
+              <div>
+                <button className="cities" key={city._id}>
+                  {city.city}
+                </button>
+                {/* <h2>{city.location}</h2> */}
+              </div>
+            );
+          })} 
         </main>
       </div>
     );

@@ -5,12 +5,12 @@ class CitiesController < ApplicationController
   def index
     @cities = City.all
 
-    render json: @cities
+    render json: @cities.to_json(include: :eateries)
   end
 
   # GET /cities/1
   def show
-    render json: @city
+    render json: @city.to_json(include: :eateries)
   end
 
 
