@@ -23,6 +23,7 @@ class Cities extends Component {
           //   console.log(city.id, "something");
           return (
             <div>
+              <br />
               <button
                 className="cities"
                 onClick={this._onButtonClick}
@@ -31,12 +32,20 @@ class Cities extends Component {
               >
                 {city.city}
               </button>
+              <br />
             </div>
           );
         });
+
       case "showRestaurants":
         return (
-          <Restaurants allRestaurants={this.state.chosenCityRestaurants} />
+          <div>
+            <h3>Select a Restaurant:</h3>
+            <Restaurants
+              allRestaurants={this.state.chosenCityRestaurants}
+              eateries={this.state.cities}
+            />
+          </div>
         );
       default:
         return this.state.cities.map(city => {

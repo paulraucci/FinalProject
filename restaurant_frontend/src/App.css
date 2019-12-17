@@ -1,6 +1,20 @@
-.App {
-  text-align: center;
+.container {
+  font-family: "Libre Franklin", sans-serif;
 }
-.cities{
-  
+body {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+header {
+  font-size: 42px;
+  height: 10vh;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 88vw;
+}
+img {
+  width: 80vw;
+  margin-left: -100px;
 }

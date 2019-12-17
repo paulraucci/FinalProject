@@ -8,8 +8,8 @@ class Resaurants extends Component {
     this.state = {
       eateries: [],
       showComponent: false,
-      chosenRestaurants: [],
-      view: "showRestaurant"
+      chosenRestaurant: [],
+      view: "showRestaurants"
     };
   }
   getView() {
@@ -18,7 +18,7 @@ class Resaurants extends Component {
         return this.state.eateries.map(eatery => {
           console.log(eatery.id, "something");
           return (
-            <div>
+            <div className="Restaurants">
               <h1
                 className="Restaurants"
                 onClick={this._onButtonClick}
@@ -27,36 +27,39 @@ class Resaurants extends Component {
               >
                 {eatery.eatery}
               </h1>
+              <h1>from Resaurants.js</h1>
             </div>
           );
         });
       case "showRestaurantInfo":
-        return <RestaurantInfo allRestaurants={this.state.chosenRestaurants} />;
+        return <RestaurantInfo allRestaurants={this.state.chosenRestaurant} />;
       default:
         return this.state.eateries.map(eatery => {
-          //   console.log(city.id, "something");
+          console.log(eatery.id, "something");
           return (
-            <div>
-              <button
-                className="Restaurants"
-                onClick={this._onButtonClick}
-                key={eatery.id}
-                data-eateryid={eatery.id}
-              >
-                {eatery.eatery}
-              </button>
-            </div>
+            <main>
+              {this.props.allRestaurants.map(eateries => {
+                return (
+                  <div key={eateries.id}>
+                    <h1>{eateries.name}</h1>
+                    <h1> from Restaurant.js</h1>
+                  </div>
+                );
+              })}
+            </main>
           );
         });
     }
   }
   async restaurantFetch(e) {
-    const eateryId = e.target.dataset.eateryid;
-    const res = await Axios.get(`http://localhost:3000/cities/${eateryId}`);
+    const cityId = e.target.dataset.eateryid;
+    const res = await Axios.get(
+      `http://localhost:3000/cities/${cityId}/eateries`
+    );
     this.setState({
-      chosenCityRestaurants: res.data.eateries,
+      chosenRestaurant: res.data.eateries,
       showComponent: true,
-      view: "showRestaurants"
+      view: "showRestaurantInfo"
     });
   }
   _onButtonClick(e) {
@@ -72,21 +75,7 @@ class Resaurants extends Component {
       .catch(error => console.error(error));
   }
   render() {
-    return (
-      <div>
-        <main>
-          {this.props.allRestaurants.map(eateries => {
-            return (
-              <div key={eateries.id}>
-                <h1>{eateries.name}</h1>
-                {/* <h1>{eateries.location}</h1> */}
-                <h1></h1>
-              </div>
-            );
-          })}
-        </main>
-      </div>
-    );
+    return <div>{this.getView()}</div>;
   }
 }
 

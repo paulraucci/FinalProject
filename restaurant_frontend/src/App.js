@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import Cities from "./Components/Cities";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Banner from "./Components/Banner";
 
 let baseURL = process.env.REACT_APP_BASEURL;
 
@@ -15,8 +18,11 @@ console.log("current base URL:", baseURL);
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
+        <Banner />
+        <Header />
         <Cities />
+        <Footer />
       </div>
     );
   }
