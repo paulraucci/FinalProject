@@ -10,7 +10,7 @@ class EateriesController < ApplicationController
 
   # GET /eateries/1
   def show
-    @eatery.where("city_id = #{params[:city_id]}")
+    @eatery = Eatery.all.where("city_id = #{params[:city_id]} AND id = #{params[:id]}")
     render json: @eatery
   end
 

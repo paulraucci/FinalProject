@@ -7,78 +7,78 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# 10.times do
-#     City.create(
-#         city: Faker::Address.unique.city,
-#     )
-# end
+10.times do
+    City.create(
+        city: Faker::Address.unique.city,
+    )
+end
 
 seedData = [
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 1,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 2,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 3,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 4,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 5,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 6,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 7,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 8,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,
         city_id: 9,
     },
     {
-        name: Faker::Hipster.words(number: 2),
+        name: Faker::Restaurant.name,
         location: Faker::Address.unique.street_address,
         rating: Faker::Number.decimal(l_digits: 1, r_digits: 2),
         cuisine: Faker::Restaurant.type,

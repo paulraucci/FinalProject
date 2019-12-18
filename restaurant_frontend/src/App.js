@@ -4,7 +4,7 @@ import Cities from "./Components/Cities";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
-
+import Nav from "./Components/Nav";
 let baseURL = process.env.REACT_APP_BASEURL;
 
 if (process.env.NODE_ENV === "development") {
@@ -21,6 +21,7 @@ class App extends Component {
       <div className="container">
         <Banner />
         <Header />
+        <Nav />
         <Cities />
         <Footer />
       </div>

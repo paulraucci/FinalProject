@@ -20,12 +20,10 @@ class Cities extends Component {
     switch (this.state.view) {
       case "showButtons":
         return this.state.cities.map(city => {
-          //   console.log(city.id, "something");
           return (
-            <div>
+            <div className="cities">
               <br />
               <button
-                className="cities"
                 onClick={this._onButtonClick}
                 key={city.id}
                 data-cityid={city.id}
@@ -36,20 +34,18 @@ class Cities extends Component {
             </div>
           );
         });
-
       case "showRestaurants":
         return (
           <div>
-            <h3>Select a Restaurant:</h3>
             <Restaurants
               allRestaurants={this.state.chosenCityRestaurants}
               eateries={this.state.cities}
+              cityId={this.state.chosenCityId}
             />
           </div>
         );
       default:
         return this.state.cities.map(city => {
-          //   console.log(city.id, "something");
           return (
             <div>
               <button
@@ -70,6 +66,9 @@ class Cities extends Component {
     const res = await Axios.get(`http://localhost:3000/cities/${cityId}`);
     this.setState({
       chosenCityRestaurants: res.data.eateries,
+      chosenCityId: cityId
+    });
+    this.setState({
       showComponent: true,
       view: "showRestaurants"
     });
